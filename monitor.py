@@ -87,6 +87,48 @@ def get_links(page, site):
     return links
 
 
+def check_waitlist(page, site, seen):
+    """Holder øje med, om en 'lukket'-tekst forsvinder fra en side."""
+    name = site.get("navn", "Venteliste")
+    url = site["url"]
+    closed_text = site.get("lukket_tekst", "Lukket for opskrivning").lower()
+    must_have = site.get("side_skal_indeholde", "venteliste").lower()
+
+    page.goto(url, wait_until="domcontentloaded", timeout=60000)
+    try:
+        page.wait_for_load_state("networkidle", timeout=15000)
+    except Exception:
+        pass
+    page.wait_for_timeout(2000)
+    text = " ".join(page.inner_text("body").split()).lower()
+
+    # Sikkerhed: hvis siden ikke er indlæst ordentligt, gør vi ingenting
+    if must_have and must_have not in text:
+        print(f"[{name}] Siden så ikke ud som forventet. Springes over denne gang.")
+        return False
+
+    status = "lukket" if closed_text in text else "åben"
+    key = "venteliste:" + url
+    old = seen.get(key)
+    print(f"[{name}] Status: {status} (før: {old})")
+
+    if old is None:
+        seen[key] = status
+        notify(f"Overvågning startet: {name}",
+               f"Ventelisten er lige nu {status}. Du får besked, hvis det ændrer sig.")
+        return True
+    if status != old:
+        seen[key] = status
+        if status == "åben":
+            notify(f"VENTELISTEN ER ÅBEN: {name}",
+                   "Skynd dig at skrive dig op! Tryk for at åbne siden.", click=url)
+        else:
+            notify(f"Ventelisten er lukket igen: {name}",
+                   "Den er lukket for opskrivning nu.", click=url)
+        return True
+    return False
+
+
 def main():
     sites = load_json(CONFIG, [])
     seen = load_json(SEEN, {})
@@ -109,6 +151,14 @@ def main():
                 continue
 
             page = context.new_page()
+            if site.get("type") == "venteliste":
+                try:
+                    if check_waitlist(page, site, seen):
+                        changed = True
+                except Exception as e:
+                    print(f"[{name}] FEJL ved indlæsning: {e}")
+                page.close()
+                continue
             try:
                 links = get_links(page, site)
             except Exception as e:
