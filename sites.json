@@ -44,5 +44,41 @@
     "type": "venteliste",
     "url": "https://www.findbolig.nu/da-dk/udlejere/frederiksberg-boligfond/ekstern-venteliste",
     "lukket_tekst": "Lukket for opskrivning"
+  },
+  {
+    "navn": "Østergården",
+    "type": "venteliste",
+    "url": "https://www.findbolig.nu/da-dk/udlejere/oestergaarden/ekstern-venteliste",
+    "lukket_tekst": "Lukket for opskrivning"
+  },
+  {
+    "navn": "Solgården",
+    "type": "venteliste",
+    "url": "https://www.findbolig.nu/da-dk/udlejere/solgaarden/ekstern-venteliste",
+    "lukket_tekst": "Lukket for opskrivning"
+  },
+  {
+    "navn": "Fuglevænget",
+    "type": "venteliste",
+    "url": "https://www.findbolig.nu/da-dk/udlejere/fuglevaenget/ekstern-venteliste",
+    "lukket_tekst": "Lukket for opskrivning"
+  },
+  {
+    "navn": "Arendal",
+    "type": "venteliste",
+    "url": "https://www.findbolig.nu/da-dk/udlejere/arendal/ekstern-venteliste",
+    "lukket_tekst": "Lukket for opskrivning"
+  },
+  {
+    "navn": "Vestergården",
+    "type": "venteliste",
+    "url": "https://www.findbolig.nu/da-dk/udlejere/vestergaarden/ekstern-venteliste",
+    "lukket_tekst": "Lukket for opskrivning"
+  },
+  {
+    "navn": "Vibehusene",
+    "type": "venteliste",
+    "url": "https://www.findbolig.nu/da-dk/udlejere/vibehusene/ekstern-venteliste",
+    "lukket_tekst": "Lukket for opskrivning"
   }
 ]
