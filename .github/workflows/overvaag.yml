@@ -1,0 +1,41 @@
+name: Boligovervågning
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: boligovervaagning
+  cancel-in-progress: false
+
+jobs:
+  tjek:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer værktøjer
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Tjek boligsider
+        run: python monitor.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+
+      - name: Husk hvilke boliger der er set
+        run: |
+          git config user.name "boligbot"
+          git config user.email "boligbot@users.noreply.github.com"
+          if [ -f seen.json ]; then git add seen.json; fi
+          git diff --cached --quiet || (git commit -m "Opdater sete boliger" && git push)
