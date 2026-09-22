@@ -209,5 +209,11 @@
     "https://cityapartment.dk/vesterbro-apartments",
     "https://saxovej.cityapartment.dk/"
   ],
-  "venteliste:https://www.findbolig.nu/da-dk/udlejere/frederiksberg-boligfond/ekstern-venteliste": "lukket"
+  "venteliste:https://www.findbolig.nu/da-dk/udlejere/frederiksberg-boligfond/ekstern-venteliste": "lukket",
+  "venteliste:https://www.findbolig.nu/da-dk/udlejere/oestergaarden/ekstern-venteliste": "lukket",
+  "venteliste:https://www.findbolig.nu/da-dk/udlejere/solgaarden/ekstern-venteliste": "lukket",
+  "venteliste:https://www.findbolig.nu/da-dk/udlejere/fuglevaenget/ekstern-venteliste": "lukket",
+  "venteliste:https://www.findbolig.nu/da-dk/udlejere/arendal/ekstern-venteliste": "lukket",
+  "venteliste:https://www.findbolig.nu/da-dk/udlejere/vestergaarden/ekstern-venteliste": "lukket",
+  "venteliste:https://www.findbolig.nu/da-dk/udlejere/vibehusene/ekstern-venteliste": "lukket"
 }
