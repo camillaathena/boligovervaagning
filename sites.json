@@ -1,17 +1,42 @@
 [
   {
     "navn": "Kereby",
-    "url": "INDSÆT-LINK-HER",
+    "url": "https://kereby.dk/bolig/",
     "link_skal_indeholde": []
   },
   {
     "navn": "CEJ",
-    "url": "INDSÆT-LINK-HER",
+    "url": "https://udlejning.cej.dk/find-bolig/overblik?collection=residences&monthlyPrice=0-10000&p=sjælland%2Ckøbenhavn",
     "link_skal_indeholde": []
   },
   {
-    "navn": "CityApartment",
-    "url": "INDSÆT-LINK-HER",
+    "navn": "CityApartment Vesterbro",
+    "url": "https://cityapartment.dk/vesterbro-apartments/",
+    "link_skal_indeholde": []
+  },
+  {
+    "navn": "CityApartment Østerbro",
+    "url": "https://cityapartment.dk/oesterbro-apartments/",
+    "link_skal_indeholde": []
+  },
+  {
+    "navn": "CityApartment Valby",
+    "url": "https://cityapartment.dk/valby-apartments/",
+    "link_skal_indeholde": []
+  },
+  {
+    "navn": "CityApartment Frederiksberg",
+    "url": "https://cityapartment.dk/frederiksberg-apartments/",
+    "link_skal_indeholde": []
+  },
+  {
+    "navn": "CityApartment City Centre",
+    "url": "https://cityapartment.dk/city-centre-apartments/",
+    "link_skal_indeholde": []
+  },
+  {
+    "navn": "CityApartment Amager",
+    "url": "https://cityapartment.dk/amager-apartments/",
     "link_skal_indeholde": []
   }
 ]
