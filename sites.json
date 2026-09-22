@@ -38,5 +38,11 @@
     "navn": "CityApartment Amager",
     "url": "https://cityapartment.dk/amager-apartments/",
     "link_skal_indeholde": []
+  },
+  {
+    "navn": "Frederiksberg Boligfond",
+    "type": "venteliste",
+    "url": "https://www.findbolig.nu/da-dk/udlejere/frederiksberg-boligfond/ekstern-venteliste",
+    "lukket_tekst": "Lukket for opskrivning"
   }
 ]
