@@ -2,7 +2,7 @@ name: Boligovervågning
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   tjek:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -37,5 +37,5 @@ jobs:
         run: |
           git config user.name "boligbot"
           git config user.email "boligbot@users.noreply.github.com"
-          if [ -f seen.json ]; then git add seen.json; fi
+          git add seen.json sidste-fund.json 2>/dev/null || true
           git diff --cached --quiet || (git commit -m "Opdater sete boliger" && git push)
