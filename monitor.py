@@ -5,6 +5,7 @@ Du behøver ikke ændre noget i denne fil. Sider indstilles i sites.json.
 """
 import json
 import os
+import re
 import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse, urlunparse, parse_qsl, urlencode
@@ -14,6 +15,9 @@ from playwright.sync_api import sync_playwright
 CONFIG = Path("sites.json")
 SEEN = Path("seen.json")
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "").strip()
+FOUND = Path("sidste-fund.json")
+# En adresse: husnummer ... firecifret postnummer + bynavn, fx "Jagtvej 183, 1. tv, 2200 København N"
+ADDRESS_RE = re.compile(r"[A-Za-zÆØÅæøå].*\b\d{1,3}[A-Za-z]?\b.*\b\d{4}\s+[A-ZÆØÅ][a-zæøå]")
 
 
 def load_json(path, default):
@@ -54,9 +58,9 @@ def notify(title, message, click=None):
 
 
 def get_links(page, site):
-    page.goto(site["url"], wait_until="domcontentloaded", timeout=60000)
+    page.goto(site["url"], wait_until="domcontentloaded", timeout=30000)
     try:
-        page.wait_for_load_state("networkidle", timeout=15000)
+        page.wait_for_load_state("networkidle", timeout=8000)
     except Exception:
         pass  # nogle sider bliver aldrig helt "stille"; det er ok
     # Scroll ned, så boliger der først indlæses ved scroll også kommer med
@@ -84,7 +88,18 @@ def get_links(page, site):
         label = " ".join(text.split())[:150]
         if url not in links or (label and not links[url]):
             links[url] = label
-    return links
+
+    # Find også adresser i sidens tekst (fanger boliger, der ikke er links)
+    addresses = set()
+    try:
+        body = page.inner_text("body")
+    except Exception:
+        body = ""
+    for line in body.splitlines():
+        line = " ".join(line.split())
+        if 8 <= len(line) <= 100 and ADDRESS_RE.search(line):
+            addresses.add(line)
+    return links, addresses
 
 
 def check_waitlist(page, site, seen):
@@ -94,9 +109,9 @@ def check_waitlist(page, site, seen):
     closed_text = site.get("lukket_tekst", "Lukket for opskrivning").lower()
     must_have = site.get("side_skal_indeholde", "venteliste").lower()
 
-    page.goto(url, wait_until="domcontentloaded", timeout=60000)
+    page.goto(url, wait_until="domcontentloaded", timeout=30000)
     try:
-        page.wait_for_load_state("networkidle", timeout=15000)
+        page.wait_for_load_state("networkidle", timeout=8000)
     except Exception:
         pass
     page.wait_for_timeout(2000)
@@ -132,6 +147,7 @@ def check_waitlist(page, site, seen):
 def main():
     sites = load_json(CONFIG, [])
     seen = load_json(SEEN, {})
+    found = {}
     changed = False
 
     with sync_playwright() as p:
@@ -160,16 +176,37 @@ def main():
                 page.close()
                 continue
             try:
-                links = get_links(page, site)
+                links, addresses = get_links(page, site)
             except Exception as e:
                 print(f"[{name}] FEJL ved indlæsning: {e}")
                 page.close()
                 continue
             page.close()
 
-            print(f"[{name}] Fandt {len(links)} links.")
+            print(f"[{name}] Fandt {len(links)} links og {len(addresses)} adresser.")
+            found[name] = {"links": sorted(links), "adresser": sorted(addresses)}
             if not links:
                 continue
+
+            # Adresser: første gang gemmes de stille; derefter giver nye adresser besked
+            akey = "adresser:" + url
+            if akey not in seen:
+                seen[akey] = sorted(addresses)
+                changed = True
+            else:
+                old_a = set(seen[akey])
+                new_a = [a for a in sorted(addresses) if a not in old_a]
+                old_links = set(seen.get(url, []))
+                new_link_text = " ".join(links[u] for u in links if u not in old_links)
+                for a in new_a[:10]:
+                    # Hører adressen til et nyt link, får du besked via linket i stedet
+                    if url in seen and a in new_link_text:
+                        continue
+                    print(f"[{name}] NY ADRESSE: {a}")
+                    notify(f"Ny bolig hos {name}", a, click=url)
+                if new_a:
+                    seen[akey] = sorted(old_a | addresses)
+                    changed = True
 
             if url not in seen:
                 # Første gang: gem alt som "set", og send en bekræftelse
@@ -198,6 +235,8 @@ def main():
 
     if changed:
         SEEN.write_text(json.dumps(seen, indent=2, ensure_ascii=False), encoding="utf-8")
+    # Oversigt over hvad programmet så i denne kørsel (bruges til fejlfinding)
+    FOUND.write_text(json.dumps(found, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 if __name__ == "__main__":
