@@ -33,6 +33,7 @@
   ],
   "https://udlejning.cej.dk/find-bolig/overblik?collection=residences&monthlyPrice=0-10000&p=sjælland%2Ckøbenhavn": [
     "https://udlejning.cej.dk/",
+    "https://udlejning.cej.dk/boliger/20350432dc354605b0e9a6b1fab76f95",
     "https://udlejning.cej.dk/boliger/72798d32de312bffda3f08db5f00c92d",
     "https://udlejning.cej.dk/boliger/ca6b633c0fa9497f8b0f826cac92197a",
     "https://udlejning.cej.dk/boliger/e4fe1baee9d4471fa176bdb596cac221",
@@ -261,7 +262,11 @@
     "Valby Langgade 122, 3. th, 2500 Valby",
     "Vesterbrogade 13, 3. tv, 1620 København V"
   ],
-  "adresser:https://udlejning.cej.dk/find-bolig/overblik?collection=residences&monthlyPrice=0-10000&p=sjælland%2Ckøbenhavn": [],
+  "adresser:https://udlejning.cej.dk/find-bolig/overblik?collection=residences&monthlyPrice=0-10000&p=sjælland%2Ckøbenhavn": [
+    "Sigurdsgade 27A, 2200 København N",
+    "Støberigade 8, 2., 6, 2450 København SV",
+    "Tomsgårdsvej 97, 3., tv, 2400 København NV"
+  ],
   "adresser:https://cityapartment.dk/vesterbro-apartments/": [],
   "adresser:https://cityapartment.dk/oesterbro-apartments/": [],
   "adresser:https://cityapartment.dk/valby-apartments/": [],
