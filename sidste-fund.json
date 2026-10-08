@@ -4,6 +4,7 @@
       "https://kereby.dk/",
       "https://kereby.dk/baeredygtighed",
       "https://kereby.dk/bolig/[",
+      "https://kereby.dk/bolig/norrebrogade-176-2-tv-2200-kobenhavn-n",
       "https://kereby.dk/bolig/sortedam-dossering-45-5-tv-2200-kobenhavn-n",
       "https://kereby.dk/bolig/strandboulevarden-61-5-th-2100-kobenhavn",
       "https://kereby.dk/boliginfo",
@@ -28,33 +29,18 @@
       "https://kereby.dk/privatlivspolitik"
     ],
     "adresser": [
-      "Amagerbrogade 109, 1. tv, 2300 København S",
-      "Amagerbrogade 111, 1. tv, 2300 København S",
-      "Amagerbrogade 120, 5., 2300 København S",
-      "Bjelkes Allé 18, st. th, 2200 København N",
-      "Brohusgade 20, 3. tv, 2200 København N",
       "Christian IX's Gade 5, 2. tv, 1111 København K",
-      "Dannebrogsgade 15, st. th, 1660 København V",
       "Fredensgade 3B, 3. th, 2200 København N",
-      "Fælledvej 23, 3. tv, 2200 København N",
       "Gersonsvej 55, st. th, 2900 Hellerup",
-      "Godthåbsvej 8A, 2., 2000 Frederiksberg",
       "Gothersgade 10C, 2. th, 1123 København K",
       "Heimdalsgade 8, 2. th, 2200 København N",
       "Helgolandsgade 2, 5. th, 1653 København V",
-      "Jagtvej 113, 2., 2200 København N",
       "Jagtvej 183, 1. tv, 2100 København Ø",
-      "Kronprinsensgade 10, 4., 1114 København K",
-      "Mølle Allé 21, 4. tv, 2500 Valby",
       "Nørrebrogade 156, st. tv, 2200 København N",
+      "Nørrebrogade 176, 2. tv, 2200 København N",
       "Rantzausgade 32, 5. tv, 2200 København N",
       "Sortedam Dossering 45, 5. tv, 2200 København N",
-      "Store Kongensgade 11, 3. th, 1264 København K",
-      "Stormgade 35, 4. th, 1555 København V",
-      "Strandboulevarden 61, 5. th, 2100 København Ø",
-      "Sundbyvester Plads 1, 3. tv, 2300 København S",
-      "Valby Langgade 122, 3. th, 2500 Valby",
-      "Vesterbrogade 13, 3. tv, 1620 København V"
+      "Strandboulevarden 61, 5. th, 2100 København Ø"
     ]
   },
   "CEJ": {
