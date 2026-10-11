@@ -1,44 +1,7 @@
 {
   "Kereby": {
-    "links": [
-      "https://kereby.dk/",
-      "https://kereby.dk/baeredygtighed",
-      "https://kereby.dk/bolig/[",
-      "https://kereby.dk/bolig/sortedam-dossering-45-5-tv-2200-kobenhavn-n",
-      "https://kereby.dk/bolig/strandboulevarden-61-5-th-2100-kobenhavn",
-      "https://kereby.dk/boliginfo",
-      "https://kereby.dk/en",
-      "https://kereby.dk/erhverv",
-      "https://kereby.dk/erhverv/butik",
-      "https://kereby.dk/erhverv/klinik",
-      "https://kereby.dk/erhverv/kontor",
-      "https://kereby.dk/erhverv/lager",
-      "https://kereby.dk/erhverv/restaurant",
-      "https://kereby.dk/erhverv/showroom",
-      "https://kereby.dk/erhvervslejer",
-      "https://kereby.dk/faq",
-      "https://kereby.dk/faq-erhverv",
-      "https://kereby.dk/job",
-      "https://kereby.dk/kontakt-os",
-      "https://kereby.dk/kvarterer",
-      "https://kereby.dk/mod-os",
-      "https://kereby.dk/nyheder-arkiv",
-      "https://kereby.dk/om-os",
-      "https://kereby.dk/parkering",
-      "https://kereby.dk/privatlivspolitik"
-    ],
-    "adresser": [
-      "Christian IX's Gade 5, 2. tv, 1111 København K",
-      "Gersonsvej 55, st. th, 2900 Hellerup",
-      "Gothersgade 10C, 2. th, 1123 København K",
-      "Helgolandsgade 2, 5. th, 1653 København V",
-      "Jagtvej 183, 1. tv, 2100 København Ø",
-      "Nørrebrogade 156, st. tv, 2200 København N",
-      "Nørrebrogade 176, 2. tv, 2200 København N",
-      "Rantzausgade 32, 5. tv, 2200 København N",
-      "Sortedam Dossering 45, 5. tv, 2200 København N",
-      "Strandboulevarden 61, 5. th, 2100 København Ø"
-    ]
+    "links": [],
+    "adresser": []
   },
   "CEJ": {
     "links": [
