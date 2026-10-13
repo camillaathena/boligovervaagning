@@ -3,6 +3,7 @@
     "https://kereby.dk/",
     "https://kereby.dk/baeredygtighed",
     "https://kereby.dk/bolig/[",
+    "https://kereby.dk/bolig/allersgade-1-2-tv-2200-kobenhavn-n",
     "https://kereby.dk/bolig/gersonsvej-55-st-th-2900-hellerup",
     "https://kereby.dk/bolig/gothersgade-10c-2-th-1123-kobenhavn-k",
     "https://kereby.dk/bolig/hc-rsteds-vej-12-2-tv-1879-frederiksberg-c",
@@ -248,6 +249,7 @@
   "venteliste:https://www.findbolig.nu/da-dk/udlejere/vestergaarden/ekstern-venteliste": "lukket",
   "venteliste:https://www.findbolig.nu/da-dk/udlejere/vibehusene/ekstern-venteliste": "lukket",
   "adresser:https://kereby.dk/bolig/": [
+    "Allersgade 1, 2. tv, 2200 København N",
     "Amagerbrogade 109, 1. tv, 2300 København S",
     "Amagerbrogade 111, 1. tv, 2300 København S",
     "Amagerbrogade 120, 5., 2300 København S",
