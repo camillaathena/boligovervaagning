@@ -3,7 +3,6 @@
     "links": [
       "https://kereby.dk/",
       "https://kereby.dk/baeredygtighed",
-      "https://kereby.dk/bolig/[",
       "https://kereby.dk/bolig/gersonsvej-55-st-th-2900-hellerup",
       "https://kereby.dk/bolig/jagtvej-183-1-tv-2100-kobenhavn",
       "https://kereby.dk/bolig/norrebrogade-174-1-th-2200-kobenhavn-n",
@@ -84,6 +83,7 @@
       "https://cityapartment.dk/support",
       "https://cityapartment.dk/valby-apartments",
       "https://cityapartment.dk/vanlose-apartments",
+      "https://cityapartment.dk/vesterbro-apartments/[",
       "https://saxovej.cityapartment.dk/"
     ],
     "adresser": []
