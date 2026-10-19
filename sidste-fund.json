@@ -1,52 +1,7 @@
 {
   "Kereby": {
-    "links": [
-      "https://kereby.dk/",
-      "https://kereby.dk/baeredygtighed",
-      "https://kereby.dk/bolig/[",
-      "https://kereby.dk/bolig/gersonsvej-55-st-th-2900-hellerup",
-      "https://kereby.dk/bolig/jagtvej-183-1-tv-2100-kobenhavn",
-      "https://kereby.dk/bolig/norrebrogade-174-1-th-2200-kobenhavn-n",
-      "https://kereby.dk/bolig/strandboulevarden-61-5-th-2100-kobenhavn",
-      "https://kereby.dk/boliginfo",
-      "https://kereby.dk/en",
-      "https://kereby.dk/erhverv",
-      "https://kereby.dk/erhverv/butik",
-      "https://kereby.dk/erhverv/klinik",
-      "https://kereby.dk/erhverv/kontor",
-      "https://kereby.dk/erhverv/lager",
-      "https://kereby.dk/erhverv/restaurant",
-      "https://kereby.dk/erhverv/showroom",
-      "https://kereby.dk/erhvervslejer",
-      "https://kereby.dk/faq",
-      "https://kereby.dk/faq-erhverv",
-      "https://kereby.dk/job",
-      "https://kereby.dk/kontakt-os",
-      "https://kereby.dk/kvarterer",
-      "https://kereby.dk/mod-os",
-      "https://kereby.dk/nyheder-arkiv",
-      "https://kereby.dk/om-os",
-      "https://kereby.dk/parkering",
-      "https://kereby.dk/privatlivspolitik"
-    ],
-    "adresser": [
-      "Allersgade 1, 2. tv, 2200 København N",
-      "Bøhmensgade 9, 3. th, 2300 København S",
-      "Christian IX's Gade 5, 2. tv, 1111 København K",
-      "Gersonsvej 55, st. th, 2900 Hellerup",
-      "Gothersgade 10C, 2. th, 1123 København K",
-      "H.C. Ørsteds Vej 12, 2. tv, 1879 Frederiksberg C",
-      "Helgolandsgade 2, 5. th, 1653 København V",
-      "Jagtvej 183, 1. tv, 2100 København Ø",
-      "Lyongade 14, 5. tv, 2300 København S",
-      "Nørrebrogade 174, 1. th, 2200 København N",
-      "Nørrebrogade 176, 2. tv, 2200 København N",
-      "Rantzausgade 32, 5. tv, 2200 København N",
-      "Strandboulevarden 61, 5. th, 2100 København Ø",
-      "Sundbyvester Plads 9, 1. tv, 2300 København S",
-      "Tyrolsgade 9, 1. tv, 2300 København S",
-      "Åboulevard 48, 5. th, 2200 København N"
-    ]
+    "links": [],
+    "adresser": []
   },
   "CEJ": {
     "links": [
