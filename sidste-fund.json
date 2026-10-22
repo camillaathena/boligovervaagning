@@ -48,23 +48,10 @@
   "CEJ": {
     "links": [
       "https://udlejning.cej.dk/",
-      "https://udlejning.cej.dk/boliger/5246f9bf4dad717840ebcb923e0b4550",
-      "https://udlejning.cej.dk/boliger/600730621597da4fe4b0f84cd6bf9c4d",
-      "https://udlejning.cej.dk/boliger/6598100068eb44beab8d7894e489c0a7",
-      "https://udlejning.cej.dk/boliger/c5c6e0d3664e4fd4bcd2f76c2d642ae8",
-      "https://udlejning.cej.dk/boliger/e68197bb6e904f6f9e3598a2f4f631bc",
-      "https://udlejning.cej.dk/find-bolig/filtrer?collection=residences&monthlyPrice=0-10000&p=sj%C3%A6lland%2Ck%C3%B8benhavn",
-      "https://udlejning.cej.dk/find-bolig/kort?collection=residences&monthlyPrice=0-10000&p=sj%C3%A6lland%2Ck%C3%B8benhavn",
       "https://udlejning.cej.dk/ofte-stillede-sporgsmal",
       "https://udlejning.cej.dk/om-os"
     ],
-    "adresser": [
-      "Nordre Fasanvej 119, 3., 1, 2000 Frederiksberg",
-      "Sigurdsgade 27C, 2200 København N",
-      "Støberigade 8, 1., 38, 2450 København SV",
-      "Støberigade 8, 2., 34, 2450 København SV",
-      "Tingskrivervej 16, 4., tv, 2400 København NV"
-    ]
+    "adresser": []
   },
   "CityApartment Vesterbro": {
     "links": [
