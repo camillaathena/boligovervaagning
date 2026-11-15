@@ -57,10 +57,27 @@
   "CEJ": {
     "links": [
       "https://udlejning.cej.dk/",
+      "https://udlejning.cej.dk/boliger/1b6334aec36560ca3c6f4c65e0a32fb6",
+      "https://udlejning.cej.dk/boliger/1ba3474446084e008ea280f1e0b65acf",
+      "https://udlejning.cej.dk/boliger/4e2a8ab2a3bd4f42828458ce2848b07e",
+      "https://udlejning.cej.dk/boliger/a240838d5ae84abf9b42e48aed947aad",
+      "https://udlejning.cej.dk/boliger/c3c11e78e7ef4ee3962a36e68e4a1783",
+      "https://udlejning.cej.dk/boliger/da030e46608c817649cb2d989d93ff7f",
+      "https://udlejning.cej.dk/boliger/de640b70d439383ff249ac797aa030d7",
+      "https://udlejning.cej.dk/find-bolig/filtrer?collection=residences&monthlyPrice=0-10000&p=sj%C3%A6lland%2Ck%C3%B8benhavn",
+      "https://udlejning.cej.dk/find-bolig/kort?collection=residences&monthlyPrice=0-10000&p=sj%C3%A6lland%2Ck%C3%B8benhavn",
       "https://udlejning.cej.dk/ofte-stillede-sporgsmal",
       "https://udlejning.cej.dk/om-os"
     ],
-    "adresser": []
+    "adresser": [
+      "Frederiksborgvej 95, 2., th, 2400 København NV",
+      "Hovmestervej 31, 4., th, 2400 København NV",
+      "Nordre Fasanvej 119, 4., 11, 2000 Frederiksberg",
+      "Sigurdsgade 31, 1., 8, 2200 København N",
+      "Støberigade 8, 1., 11, 2450 København SV",
+      "Støberigade 8, 1., 49, 2450 København SV",
+      "Støberigade 8, 2., 20, 2450 København SV"
+    ]
   },
   "CityApartment Vesterbro": {
     "links": [
