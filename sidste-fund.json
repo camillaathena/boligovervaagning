@@ -29,7 +29,6 @@
       "Allersgade 1, 2. tv, 2200 København N",
       "Bøhmensgade 9, 3. th, 2300 København S",
       "Christian IX's Gade 5, 2. tv, 1111 København K",
-      "Drogdensgade 4, 5., 2300 København S",
       "Englandsvej 2, 3. tv, 2300 København S",
       "Gersonsvej 55, st. th, 2900 Hellerup",
       "Gothersgade 10C, 2. th, 1123 København K",
@@ -51,6 +50,7 @@
       "Strandboulevarden 61, 5. th, 2100 København Ø",
       "Sundbyvester Plads 9, 1. tv, 2300 København S",
       "Tyrolsgade 9, 1. tv, 2300 København S",
+      "Ved Klosteret 4, st. th, 2100 København Ø",
       "Åboulevard 48, 1. th, 2200 København N"
     ]
   },
@@ -234,6 +234,7 @@
       "https://cityapartment.dk/apartment-rentals-copenhagen",
       "https://cityapartment.dk/broenshoej-apartments",
       "https://cityapartment.dk/city-centre-apartments",
+      "https://cityapartment.dk/cityapartments/bohmensgade-14-3-tv",
       "https://cityapartment.dk/cityapartments/gerbrandsvej-2-1-th",
       "https://cityapartment.dk/commercials",
       "https://cityapartment.dk/contact",
