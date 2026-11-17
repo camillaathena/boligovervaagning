@@ -45,12 +45,14 @@
       "Nygårdsvej 16, 1. th, 2100 København Ø",
       "Nørrebrogade 174, 1. th, 2200 København N",
       "Nørrebrogade 176, 2. tv, 2200 København N",
+      "Nørrebrogade 30, 2. th, 2200 København N",
       "Nørrebrogade 41, 3. th, 2200 København N",
       "Oehlenschlægersgade 46, 2. tv, 1663 København V",
       "Rantzausgade 32, 5. tv, 2200 København N",
       "Strandboulevarden 61, 5. th, 2100 København Ø",
       "Sundbyvester Plads 9, 1. tv, 2300 København S",
       "Tyrolsgade 9, 1. tv, 2300 København S",
+      "Valby Langgade 75, 3. th, 2500 Valby",
       "Ved Klosteret 4, st. th, 2100 København Ø",
       "Åboulevard 48, 1. th, 2200 København N"
     ]
@@ -105,7 +107,6 @@
       "https://cityapartment.dk/broenshoej-apartments",
       "https://cityapartment.dk/city-centre-apartments",
       "https://cityapartment.dk/cityapartments/osterbrogade-39-2-tv",
-      "https://cityapartment.dk/cityapartments/osterbrogade-91-4-tv",
       "https://cityapartment.dk/cityapartments/stockholmsgade-49-st",
       "https://cityapartment.dk/commercials",
       "https://cityapartment.dk/contact",
